@@ -26,7 +26,7 @@ const Items = () => {
   }}
   
   >
-<Typography>
+<Typography variant='h6' sx={{display: 'flex', opacity: '0.7', width: 300, justifyContent:'center', alignItems: 'center'}}>
   {coffee.itemName}
 </Typography>
 <Box
@@ -38,7 +38,7 @@ sx={{
 }}
 />
 
-<Typography>
+<Typography sx={{display: 'flex', width: 200, opacity: 0.5, justifyContent: 'center'}}>
   {coffee.itemDescription}
 </Typography>
     
@@ -64,6 +64,7 @@ sx={{
     justifyContent: 'space-evenly',
     gap: 1,
     flexWrap: 'wrap',
+    
   
    
    }}>

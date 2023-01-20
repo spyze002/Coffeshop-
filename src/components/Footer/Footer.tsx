@@ -11,13 +11,13 @@ const Footer = () => {
         height: '200px',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#C4A484',
+        backgroundColor: '#6f4e37',
         mt: 20,
         gap: 3
     }}>
-        <Typography variant='h6'>
+           <Typography variant='h6'>
             &copy;2023 Coffee shop, lnc.
-        </Typography>
+          </Typography>
         <Box sx={{
           display: 'flex',
           gap: 3
