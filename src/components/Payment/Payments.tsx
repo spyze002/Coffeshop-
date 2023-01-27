@@ -16,57 +16,70 @@ const Payments = () => {
       borderRadius: '10px',
       mt: 10
     }}>{/**this is the whole container of the payment page */}
+    <form action='POST' method=''>
+
         <Box sx={{
           display: 'flex',
-          flexDirection: 'column'
+          flexDirection: 'column',
+
         }}>
-            <Typography variant='h5'>Card Number</Typography>
+            <Typography variant='h6'>Card Number</Typography>
             <Typography>Enter the 16-degit card number on the card</Typography>
-            <TextField variant='outlined' />
+            <TextField variant='outlined' required type='number' />
         </Box>
         <Box sx={{
           display: 'flex',
-          justifyContent: 'space-between'
+          // width: '100%',
+          justifyContent: 'space-evenly',
+          mt: 2
         }}>
           <Box>
                <Typography>CVV Number</Typography>
                <Typography>Enter the 3 or 4 digit nuumber on the card</Typography>
           </Box>
         
-              <TextField variant='outlined' />
+              <TextField variant='outlined' fullWidth type='number' required  />
         </Box>
         <Box sx={{
           display: 'flex',
-          justifyContent: 'space-between'
+          justifyContent: 'space-between',
+          mt: 2
         }}>
           <Box>
           <Typography>Expiry Date</Typography>
               <Typography>Enter the expiration date of the card</Typography>
           </Box>
      
-              <TextField variant='outlined' />
-              <TextField variant='outlined' />
+              <TextField variant='outlined' fullWidth type='date' required />
+              {/* <TextField variant='outlined' /> */}
         </Box>
         <Box sx={{
           display: 'flex',
-          justifyContent: 'space-between'
+          justifyContent: 'space-between',
+          mt: 2
         }} >
           <Box>
           <Typography>Password</Typography>
               <Typography>Enter your dynamic password</Typography>
           </Box>
-              <TextField variant='outlined' type='password' />
+              <TextField variant='outlined' type='password' fullWidth />
         </Box>
 
         <Box sx={{
-          display: 'flex'
+          display: 'flex',
+          mt: 2,
+          justifyContent: 'space-evenly',
+          alignItems: 'center',
+          margin: 'auto',
+          width: '50%'
         }}>
-        <Button variant='contained'> Pay Now</Button> 
+        <Button variant='contained' type='submit'> Pay Now</Button> 
         <Typography> OR </Typography>
-        <Button variant='contained'> Use Mobile Money</Button>
+        <Button variant='contained' type='button'> Use Mobile Money</Button>
         </Box>
        
-
+              
+    </form>
      
     </Box>
   )
